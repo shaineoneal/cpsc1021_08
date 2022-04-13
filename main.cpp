@@ -23,20 +23,14 @@ int main()
   
   // make a vector 'vector<Type>shapeVect {element0, element1, element2, element3}'
     vector<Shape*> shapeVect {&circle, &square, &rectangle, &trapezoid};
-  // where 'Type' is a pointer to class Shape and each element is the memory address
-  // of one of objects you have instantiated above
 
-
-  
   // use a range-based for loop to print the name and area of each object using
   // functions printName() and getArea() accessed through the base class pointer
     for(Shape * s : shapeVect)
     {
-        cout << "Area of " << s->printName() << "is: ";
+        cout << "Area of " << s->printName() << " is: ";
         cout << fixed << setprecision(1) << s->getArea() << endl;
     }
-
-
 
    return 0;
 }

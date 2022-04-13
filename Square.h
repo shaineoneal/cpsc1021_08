@@ -10,7 +10,8 @@ class Square : public Shape // inherit publically from Shape
 
     public:
         Square() : Shape("Circle") {};
-        Square(double side) : side(side) {};
+        Square(double side) 
+            : Shape("Square"), side(side) {};
 
         double getArea();
 };

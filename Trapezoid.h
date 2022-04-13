@@ -13,7 +13,7 @@ class Trapezoid : public Shape // inherit publically from Shape
     public:
         Trapezoid() : Shape("Trapezoid") {};
         Trapezoid(double base1, double base2, double height)
-            : base1(base1), base2(base2), height(height) {};
+            : Shape("Trapezoid"), base1(base1), base2(base2), height(height) {};
         
         double getArea();
 

@@ -12,7 +12,7 @@ class Circle : public Shape // inherit publically from Shape
     public:
         Circle() : Shape("Circle") {};
         Circle(double radius) 
-            : radius(radius) {};
+            : Shape("Circle"), radius(radius) {};
 
         double getArea();
 };

@@ -11,7 +11,7 @@ class Rectangle : public Shape // inherit publically from Shape
     public:
         Rectangle() : Shape("Rectangle") {}; 
         Rectangle(double length, double width)
-            : length(length), width(width) {};
+            : Shape("Rectangle"), length(length), width(width) {};
         
         double getArea();
 };
